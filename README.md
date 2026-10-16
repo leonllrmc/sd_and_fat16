@@ -1,0 +1,1 @@
+an experiment trying to read a FAT file system on SD with a FPGA
