@@ -4,19 +4,32 @@
     <Version>beta</Version>
     <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
     <FileList>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv" type="verilog"/>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv" type="verilog"/>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv" type="verilog"/>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_rx.v" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\synth_constraints.gsc" type="gsc"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\gw_jtag.v" type="gao"/>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\gw_gao_top.v" type="gao"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
         <Option type="dsp_style" value="auto"/>
         <Option type="global_freq" value="50.000"/>
+        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.12.03_x64/IDE/data/ipcores/GAO"/>
+        <Option type="include_path" value="C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/impl/gwsynthesis/RTL_GAO"/>
         <Option type="looplimit" value="2000"/>
         <Option type="map_option" value="1"/>
         <Option type="max_fanout" value="1000"/>
         <Option type="netlist_hierarchy" value="1"/>
-        <Option type="opt_goal" value="auto"/>
+        <Option type="opt_goal" value="area"/>
         <Option type="output_file" value="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\sd_and_fat16.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>
         <Option type="ram_rw_check" value="0"/>

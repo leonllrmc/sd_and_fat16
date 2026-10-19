@@ -9,20 +9,46 @@
         "SubInsts": [
             {
                 "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
-                "InstLine": 16,
+                "InstLine": 21,
+                "InstName": "debug_rx",
+                "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_rx.v",
+                "ModuleLine": 27,
+                "ModuleName": "uart_rx"
+            },
+            {
+                "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
+                "InstLine": 36,
                 "InstName": "debug_tx",
                 "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_tx.v",
                 "ModuleLine": 10,
                 "ModuleName": "uart_tx"
+            },
+            {
+                "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
+                "InstLine": 58,
+                "InstName": "sdCmd",
+                "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+                "ModuleLine": 1,
+                "ModuleName": "sd_cmd",
+                "SubInsts": [
+                    {
+                        "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+                        "InstLine": 34,
+                        "InstName": "crc_gen",
+                        "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/CRC7.sv",
+                        "ModuleLine": 1,
+                        "ModuleName": "CRC7"
+                    },
+                    {
+                        "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+                        "InstLine": 55,
+                        "InstName": "spi",
+                        "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
+                        "ModuleLine": 31,
+                        "ModuleName": "spi_master"
+                    }
+                ]
             }
         ]
-    },
-    {
-        "InstFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
-        "InstLine": 31,
-        "InstName": "spi_master",
-        "ModuleFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
-        "ModuleLine": 31,
-        "ModuleName": "spi_master"
     }
 ]

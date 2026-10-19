@@ -12,7 +12,7 @@ module sd_cmd(
    // at end => fetch 1 byte => ready = 1 =[ready=0]> when sendnext |^| => fetch 1 byte => ready,...
    // when all byte fetched => rdy = 1 && end = 1 (pulse)
    input [10:0] recv_byte_count,
-   output [7:0] recv_data,
+   output reg [7:0] recv_data,
    input recv_data_sendnext, // when supervisor ready to recieve next recv data byte
    output reg recv_data_ready, // sent after data are avaible
    output reg recv_data_end, // sent after recv_byte_count done (all bytes read)
@@ -31,7 +31,7 @@ module sd_cmd(
    wire [6:0] crc_result;
    wire crc_busy;
 
-   CRC7 crc(
+   CRC7 crc_gen(
       .clk(clk),
       .rst_n(rst_n),
       .start_pulse(crc_compute_pulse),
@@ -99,6 +99,8 @@ module sd_cmd(
          sd_spi_cs <= 1'b1;
          cmd_busy <= 1'b1;
 
+         recv_data_end <= 1'b1;
+
          sd_powerup_counter <= 4'd0;
       end else begin
          case (state)
@@ -132,11 +134,16 @@ module sd_cmd(
             STATE_IDLE: begin
                sd_spi_cs <= 1'b1;
 
+               cmd_busy <= 1'b0;
+
+
                if(cmd_send_pulse) begin
                   // decrementing
                   recv_byte_left <= recv_byte_count;
 
                   crc_compute_pulse <= 1'b1;
+
+                  cmd_busy <= 1'b1;
                   
                   spi_mosi_data <= 8'hFF;
                   spi_send_pulse <= 1'b1;
@@ -146,6 +153,8 @@ module sd_cmd(
 
             STATE_ASSERT_BEFORECS: begin
                spi_send_pulse <= 1'b0;
+
+               crc_compute_pulse <= 1'b0;
 
                if(spi_done_pulse) begin
                   sd_spi_cs <= 1'b0;
@@ -185,12 +194,12 @@ module sd_cmd(
                spi_send_pulse <= 1'b0;
 
                if(spi_done_pulse) begin
-                  if(arg_send_index == 0) begin // overflow
+                  if(arg_send_index == 2'd0) begin // overflow
                      spi_send_pulse <= 1'b0;
                      state <= STATE_CHECK_CRC_DONE;
                   end else begin
                      case(arg_send_index)
-                        2'd0: spi_mosi_data <= cmd_arg[31:24];
+                        //2'd0: spi_mosi_data <= cmd_arg[31:24];
                         2'd1: spi_mosi_data <= cmd_arg[23:16];
                         2'd2: spi_mosi_data <= cmd_arg[15:8];
                         2'd3: spi_mosi_data <= cmd_arg[7:0];
@@ -217,8 +226,10 @@ module sd_cmd(
 
                if(spi_done_pulse) begin
                   if(recv_byte_count == 10'd0) begin
+                     recv_data_end <= 1'b1;
                      state <= STATE_DEASSERT_BEFORECS;
                   end else begin
+                     recv_data_end <= 1'b0;
                      state <= STATE_RX_BYTE;
                   end
                end
@@ -226,6 +237,7 @@ module sd_cmd(
 
             STATE_RX_BYTE: begin
                if(recv_byte_left == 10'd0) begin
+                  recv_data_ready <= 1'b1;
                   recv_data_end <= 1'b1;
                   state <= STATE_DEASSERT_BEFORECS;
                end else begin
@@ -242,11 +254,11 @@ module sd_cmd(
                if(spi_done_pulse) begin
                   if(use_data_mode && (spi_miso_data != 8'hFE))
                      // data block starts with 0xFE char
-                     state <= STATE_RX_BYTE
-                  else if((recv_byte_count == recv_byte_left) && (spi_miso_data[7]))
-                     // R1 reply (first byte of all) has byte 7 == 0
-                     state <= STATE_RX_BYTE
-                  else begin 
+                     state <= STATE_RX_BYTE;
+ //  else if((recv_byte_count == recv_byte_left) && (spi_miso_data[7]))
+ //     // R1 reply (first byte of all) has byte 7 == 0
+ //     state <= STATE_RX_BYTE;
+                  else begin
                      recv_data_ready <= 1'b1;
                      recv_data <= spi_miso_data;
 
@@ -258,16 +270,20 @@ module sd_cmd(
             end
 
             STATE_AWAIT_GETNEXT: begin
-               if(recv_data_sendnext)
+               if(recv_data_sendnext) begin
                   recv_data_ready <= 1'b0;
                   state <= STATE_RX_BYTE;
                end
             end
 
             STATE_DEASSERT_BEFORECS: begin
+               recv_data_ready <= 1'b0;
                //sd_spi_cs <= 1'b0;
                spi_mosi_data <= 8'hFF;
                spi_send_pulse <= 1'b1;
+
+               
+               recv_data_end <= 1'b1;
 
                state <= STATE_DEASSERT_INTCS;
             end
@@ -293,6 +309,6 @@ module sd_cmd(
 
          endcase
       end
-
+   end
 
 endmodule

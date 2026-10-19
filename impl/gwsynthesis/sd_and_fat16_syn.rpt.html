@@ -55,8 +55,19 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv<br>
+<td>C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_rx.v<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v<br>
+C:\Gowin\Gowin_V1.9.12.03_x64\IDE\data\ipcores\gw_jtag.v<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </td>
 </tr>
 <tr>
@@ -81,7 +92,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Thu Oct 15 21:53:35 2026
+<td>Sun Oct 18 12:41:47 2026
 </td>
 </tr>
 <tr>
@@ -97,11 +108,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.038s, Peak memory usage = 397.684MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.098s, Peak memory usage = 397.684MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.041s, Peak memory usage = 397.684MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.013s, Peak memory usage = 397.684MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.156s, Elapsed time = 0h 0m 0.276s, Peak memory usage = 181.945MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.087s, Peak memory usage = 181.945MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.032s, Peak memory usage = 181.945MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.089s, Peak memory usage = 181.945MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.036s, Peak memory usage = 181.945MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 181.945MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 181.977MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 182.055MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.106s, Peak memory usage = 182.082MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.029s, Peak memory usage = 182.176MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 182.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 214.996MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.108s, Peak memory usage = 214.996MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.086s, Peak memory usage = 214.996MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 0.155s, Elapsed time = 0h 0m 0.192s, Peak memory usage = 397.684MB</td>
+<td>CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 214.996MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -113,71 +124,107 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label"><b>I/O Port </b></td>
-<td>7</td>
+<td>12</td>
 </tr>
 <tr>
 <td class="label"><b>I/O Buf </b></td>
-<td>6</td>
+<td>12</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
-<td>2</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
-<td>1</td>
-</tr>
-<tr>
-<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
-<td>3</td>
+<td>5</td>
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>23</td>
+<td>580</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>28</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>89</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
-<td>1</td>
+<td>3</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
-<td>4</td>
-</tr>
-<tr>
-<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
 <td>18</td>
 </tr>
 <tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>39</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>41</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>33</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>326</td>
+</tr>
+<tr>
 <td class="label"><b>LUT </b></td>
-<td>26</td>
+<td>1186</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>2</td>
+<td>101</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>12</td>
+<td>375</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>12</td>
+<td>710</td>
 </tr>
 <tr>
 <td class="label"><b>ALU </b></td>
-<td>8</td>
+<td>33</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
-<td>8</td>
+<td>33</td>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
-<td>2</td>
+<td>6</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
-<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label"><b>Black Box </b></td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspGW_JTAG</td>
+<td>1</td>
 </tr>
 </table>
 <h2><a name="utilization">Resource Utilization Summary</a></h2>
@@ -189,13 +236,13 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>36(28 LUT, 8 ALU) / 8640</td>
-<td><1%</td>
+<td>1225(1192 LUT, 33 ALU) / 8640</td>
+<td>15%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>23 / 6693</td>
-<td><1%</td>
+<td>580 / 6693</td>
+<td>9%</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as Latch</td>
@@ -204,13 +251,13 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>23 / 6693</td>
-<td><1%</td>
+<td>580 / 6693</td>
+<td>9%</td>
 </tr>
 <tr>
 <td class="label">BSRAM</td>
-<td>0 / 26</td>
-<td>0%</td>
+<td>24 / 26</td>
+<td>93%</td>
 </tr>
 </table>
 <h1><a name="timing">Timing</a></h1>
@@ -240,6 +287,18 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td> </td>
 <td>clk_ibuf/I </td>
 </tr>
+<tr>
+<td>2</td>
+<td>tck_pad_i</td>
+<td>Base</td>
+<td>50.000</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>25.000</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/tck_ibuf/I </td>
+</tr>
 </table>
 <h2><a name="performance">Max Frequency Summary:</a></h2>
 <table class="summary_table">
@@ -255,7 +314,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>1</td>
 <td>clk</td>
 <td>50.000(MHz)</td>
-<td>132.112(MHz)</td>
+<td>76.777(MHz)</td>
+<td>6</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tck_pad_i</td>
+<td>20.000(MHz)</td>
+<td>79.409(MHz)</td>
 <td>4</td>
 <td>TOP</td>
 </tr>
@@ -266,27 +333,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.431</td>
+<td>-3.181</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>63.509</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.358</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_0_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_6_s4</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_14_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -304,108 +371,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_0_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>3</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_0_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s25/I0</td>
 </tr>
 <tr>
-<td>3.306</td>
-<td>1.184</td>
+<td>55.025</td>
+<td>1.163</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s25/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.783</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s24/I1</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.967</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s24/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>57.725</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n78_s4/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s20/I0</td>
 </tr>
 <tr>
-<td>7.169</td>
+<td>58.888</td>
 <td>1.163</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n78_s4/F</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s20/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>59.646</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s4/D</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s16/I1</td>
+</tr>
+<tr>
+<td>60.830</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s16/F</td>
+</tr>
+<tr>
+<td>61.588</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s15/I0</td>
+</tr>
+<tr>
+<td>62.751</td>
+<td>1.163</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s15/F</td>
+</tr>
+<tr>
+<td>63.509</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_14_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -419,15 +534,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -435,7 +550,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -443,50 +558,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s4/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_14_s0/CLK</td>
 </tr>
 <tr>
-<td>20.358</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_14_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
 <td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s4</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_14_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.857, 53.191%; route: 4.696, 42.647%; tC2Q: 0.458, 4.162%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp2</h3>
@@ -494,27 +617,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.431</td>
+<td>-2.746</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>63.074</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.358</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/fsm_state_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_0_s5</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -532,108 +655,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n_fsm_state_0_s9/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
-<td>1.163</td>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n329_s3/I2</td>
+</tr>
+<tr>
+<td>62.316</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n_fsm_state_0_s9/F</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n329_s3/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>63.074</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/fsm_state_0_s0/D</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_0_s5/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -647,15 +818,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -663,7 +834,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -671,50 +842,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/fsm_state_0_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_0_s5/CLK</td>
 </tr>
 <tr>
-<td>20.358</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_0_s5</td>
+</tr>
+<tr>
+<td>60.328</td>
 <td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/fsm_state_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_0_s5</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.422, 51.265%; route: 4.696, 44.401%; tC2Q: 0.458, 4.334%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp3</h3>
@@ -722,27 +901,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.431</td>
+<td>-2.746</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>63.074</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.358</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/fsm_state_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_1_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -760,108 +939,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n_fsm_state_1_s8/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
-<td>1.163</td>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n328_s1/I2</td>
+</tr>
+<tr>
+<td>62.316</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n_fsm_state_1_s8/F</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n328_s1/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>63.074</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/fsm_state_1_s0/D</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_1_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -875,15 +1102,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -891,7 +1118,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -899,50 +1126,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/fsm_state_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_1_s1/CLK</td>
 </tr>
 <tr>
-<td>20.358</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_1_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
 <td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/fsm_state_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_1_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.422, 51.265%; route: 4.696, 44.401%; tC2Q: 0.458, 4.334%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp4</h3>
@@ -950,27 +1185,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.746</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>63.074</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_0_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_12_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -988,108 +1223,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
-<td>1.163</td>
+<td>60.540</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>61.298</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_0_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n317_s1/I2</td>
+</tr>
+<tr>
+<td>62.316</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n317_s1/F</td>
+</tr>
+<tr>
+<td>63.074</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_12_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1103,15 +1386,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -1119,7 +1402,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -1127,50 +1410,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_0_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_12_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_12_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_0_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_12_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.422, 51.265%; route: 4.696, 44.401%; tC2Q: 0.458, 4.334%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp5</h3>
@@ -1178,27 +1469,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.535</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>63.219</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.685</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_1_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -1216,108 +1507,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s4/I0</td>
+</tr>
+<tr>
+<td>62.461</td>
 <td>1.163</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s4/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>63.219</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_1_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s1/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1331,15 +1670,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -1347,7 +1686,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -1355,50 +1694,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_1_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s1</td>
+</tr>
+<tr>
+<td>60.685</td>
 <td>-0.043</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_1_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_loop_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.567, 51.924%; route: 4.696, 43.801%; tC2Q: 0.458, 4.275%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp6</h3>
@@ -1406,27 +1753,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.520</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>62.848</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_2_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_13_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -1444,108 +1791,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_6_s10/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
-<td>1.184</td>
+<td>56.822</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>10</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_6_s10/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>57.580</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s21/I0</td>
 </tr>
 <tr>
-<td>7.169</td>
+<td>58.743</td>
 <td>1.163</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s21/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>59.501</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_2_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s17/I1</td>
+</tr>
+<tr>
+<td>60.685</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s17/F</td>
+</tr>
+<tr>
+<td>61.443</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s14/I3</td>
+</tr>
+<tr>
+<td>62.090</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s14/F</td>
+</tr>
+<tr>
+<td>62.848</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_13_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1559,15 +1954,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -1575,7 +1970,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -1583,50 +1978,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_2_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_13_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_13_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_2_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_13_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.196, 50.201%; route: 4.696, 45.371%; tC2Q: 0.458, 4.428%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp7</h3>
@@ -1634,27 +2037,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.520</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>62.848</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_3_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_12_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -1672,108 +2075,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/I3</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.451</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/F</td>
+</tr>
+<tr>
+<td>57.209</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/I1</td>
+</tr>
+<tr>
+<td>58.393</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.151</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_12_s16/I0</td>
 </tr>
 <tr>
-<td>7.169</td>
+<td>60.314</td>
 <td>1.163</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_12_s16/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>61.072</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_3_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_12_s13/I2</td>
+</tr>
+<tr>
+<td>62.090</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_12_s13/F</td>
+</tr>
+<tr>
+<td>62.848</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_12_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1787,15 +2238,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -1803,7 +2254,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -1811,50 +2262,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_3_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_12_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_12_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_3_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_12_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.196, 50.201%; route: 4.696, 45.371%; tC2Q: 0.458, 4.428%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp8</h3>
@@ -1862,27 +2321,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_4_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_2_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -1900,108 +2359,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
-<td>1.163</td>
+<td>60.540</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>61.298</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_4_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n327_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n327_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_2_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2015,15 +2522,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -2031,7 +2538,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -2039,50 +2546,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_4_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_2_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_2_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_4_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_2_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp9</h3>
@@ -2090,27 +2605,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>12.787</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>7.927</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/data_to_send_5_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_3_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -2128,108 +2643,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s1/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_6_s5/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
 </tr>
 <tr>
-<td>7.169</td>
-<td>1.163</td>
+<td>60.540</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>6</td>
-<td>debug_tx/data_to_send_6_s5/F</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
 </tr>
 <tr>
-<td>7.927</td>
+<td>61.298</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_5_s1/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n326_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n326_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_3_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2243,15 +2806,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -2259,7 +2822,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -2267,50 +2830,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/data_to_send_5_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_3_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_3_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/data_to_send_5_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_3_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>4</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.531, 49.251%; route: 3.180, 44.356%; tC2Q: 0.458, 6.393%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp10</h3>
@@ -2318,27 +2889,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_0_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_4_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -2356,92 +2927,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_0_s1/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n325_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n325_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_4_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2455,15 +3090,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -2471,7 +3106,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -2479,50 +3114,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_0_s1/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_4_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_4_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_0_s1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_4_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp11</h3>
@@ -2530,27 +3173,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_5_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -2568,92 +3211,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_1_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n324_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n324_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_5_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2667,15 +3374,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -2683,7 +3390,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -2691,50 +3398,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_5_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_5_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_5_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp12</h3>
@@ -2742,27 +3457,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_6_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -2780,92 +3495,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_2_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n323_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n323_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_6_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2879,15 +3658,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -2895,7 +3674,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -2903,50 +3682,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_2_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_6_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_6_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_6_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp13</h3>
@@ -2954,27 +3741,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_3_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_7_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -2992,92 +3779,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_3_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n322_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n322_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_7_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -3091,15 +3942,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -3107,7 +3958,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -3115,50 +3966,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_3_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_7_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_7_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_3_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_7_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp14</h3>
@@ -3166,27 +4025,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_8_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -3204,92 +4063,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n321_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n321_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_8_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -3303,15 +4226,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -3319,7 +4242,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -3327,50 +4250,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_8_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_8_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_8_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp15</h3>
@@ -3378,27 +4309,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_5_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_9_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -3416,92 +4347,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_5_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n320_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n320_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_9_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -3515,15 +4510,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -3531,7 +4526,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -3539,50 +4534,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_5_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_9_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_9_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_5_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_9_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp16</h3>
@@ -3590,27 +4593,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_6_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_10_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -3628,92 +4631,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_6_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n319_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n319_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_10_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -3727,15 +4794,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -3743,7 +4810,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -3751,50 +4818,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_6_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_10_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_10_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_6_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_10_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp17</h3>
@@ -3802,27 +4877,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_7_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_11_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -3840,92 +4915,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_7_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n318_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n318_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_11_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -3939,15 +5078,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -3955,7 +5094,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -3963,50 +5102,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_7_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_11_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_11_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_7_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_11_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp18</h3>
@@ -4014,27 +5161,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.708</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>6.006</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/cycle_counter_8_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_13_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -4052,92 +5199,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n409_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.248</td>
+<td>56.822</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
+</tr>
+<tr>
+<td>57.580</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>RR</td>
-<td>9</td>
-<td>debug_tx/n409_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
 </tr>
 <tr>
-<td>6.006</td>
+<td>59.522</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_8_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n316_s1/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n316_s1/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_13_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -4151,15 +5362,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -4167,7 +5378,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -4175,50 +5386,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_8_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_13_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_13_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/cycle_counter_8_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_13_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.368, 45.119%; route: 2.422, 46.148%; tC2Q: 0.458, 8.733%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp19</h3>
@@ -4226,27 +5445,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.729</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.985</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_14_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -4264,92 +5483,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>5</td>
-<td>debug_tx/bit_counter_1_s0/Q</td>
+<td>2</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_max_6_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n404_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>2</td>
-<td>debug_tx/n404_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n404_s1/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/I2</td>
 </tr>
 <tr>
-<td>5.227</td>
-<td>1.163</td>
+<td>56.822</td>
+<td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n404_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s8/F</td>
 </tr>
 <tr>
-<td>5.985</td>
+<td>57.580</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/I1</td>
+</tr>
+<tr>
+<td>58.764</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s7/F</td>
+</tr>
+<tr>
+<td>59.522</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/I2</td>
+</tr>
+<tr>
+<td>60.540</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>16</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s4/F</td>
+</tr>
+<tr>
+<td>61.298</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s2/I3</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/n315_s2/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_14_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -4363,15 +5646,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -4379,7 +5662,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -4387,50 +5670,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_14_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_14_s1</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_14_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.347, 44.899%; route: 2.422, 46.333%; tC2Q: 0.458, 8.768%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp20</h3>
@@ -4438,27 +5729,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.729</td>
+<td>-2.375</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.985</td>
+<td>62.703</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_8_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -4476,92 +5767,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>5</td>
-<td>debug_tx/bit_counter_1_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n404_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>2</td>
-<td>debug_tx/n404_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n404_s1/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/I3</td>
 </tr>
 <tr>
-<td>5.227</td>
-<td>1.163</td>
+<td>56.451</td>
+<td>0.647</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n404_s1/F</td>
+<td>7</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/F</td>
 </tr>
 <tr>
-<td>5.985</td>
+<td>57.209</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s13/I2</td>
+</tr>
+<tr>
+<td>58.227</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s13/F</td>
+</tr>
+<tr>
+<td>58.985</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_8_s10/I1</td>
+</tr>
+<tr>
+<td>60.169</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_8_s10/F</td>
+</tr>
+<tr>
+<td>60.927</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_8_s9/I2</td>
+</tr>
+<tr>
+<td>61.945</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_8_s9/F</td>
+</tr>
+<tr>
+<td>62.703</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_8_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -4575,15 +5930,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -4591,7 +5946,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -4599,50 +5954,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_8_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_8_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_8_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.347, 44.899%; route: 2.422, 46.333%; tC2Q: 0.458, 8.768%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.051, 49.494%; route: 4.696, 46.015%; tC2Q: 0.458, 4.491%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp21</h3>
@@ -4650,27 +6013,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.729</td>
+<td>-2.149</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.985</td>
+<td>62.477</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_11_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -4688,92 +6051,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>5</td>
-<td>debug_tx/bit_counter_1_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n404_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>2</td>
-<td>debug_tx/n404_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n404_s1/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/I3</td>
 </tr>
 <tr>
-<td>5.227</td>
+<td>56.451</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/F</td>
+</tr>
+<tr>
+<td>57.209</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/I1</td>
+</tr>
+<tr>
+<td>58.393</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/F</td>
+</tr>
+<tr>
+<td>59.151</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s15/I0</td>
+</tr>
+<tr>
+<td>60.314</td>
 <td>1.163</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n404_s1/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s15/F</td>
 </tr>
 <tr>
-<td>5.985</td>
+<td>61.072</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s12/I3</td>
+</tr>
+<tr>
+<td>61.719</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_11_s12/F</td>
+</tr>
+<tr>
+<td>62.477</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_11_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -4787,15 +6214,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -4803,7 +6230,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -4811,50 +6238,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_11_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_11_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_11_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.347, 44.899%; route: 2.422, 46.333%; tC2Q: 0.458, 8.768%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.825, 48.350%; route: 4.696, 47.057%; tC2Q: 0.458, 4.593%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp22</h3>
@@ -4862,27 +6297,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.729</td>
+<td>-2.004</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.985</td>
+<td>62.332</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_3_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_9_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -4900,92 +6335,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>5</td>
-<td>debug_tx/bit_counter_1_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n404_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>2</td>
-<td>debug_tx/n404_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n404_s1/I0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/I3</td>
 </tr>
 <tr>
-<td>5.227</td>
-<td>1.163</td>
+<td>56.451</td>
+<td>0.647</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n404_s1/F</td>
+<td>7</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/F</td>
 </tr>
 <tr>
-<td>5.985</td>
+<td>57.209</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_3_s0/RESET</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/I1</td>
+</tr>
+<tr>
+<td>58.393</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s9/F</td>
+</tr>
+<tr>
+<td>59.151</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_9_s11/I3</td>
+</tr>
+<tr>
+<td>59.798</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_9_s11/F</td>
+</tr>
+<tr>
+<td>60.556</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_9_s10/I2</td>
+</tr>
+<tr>
+<td>61.574</td>
+<td>1.018</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_9_s10/F</td>
+</tr>
+<tr>
+<td>62.332</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_9_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -4999,15 +6498,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -5015,7 +6514,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -5023,50 +6522,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_3_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_9_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_9_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_3_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_9_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.347, 44.899%; route: 2.422, 46.333%; tC2Q: 0.458, 8.768%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.680, 47.588%; route: 4.696, 47.751%; tC2Q: 0.458, 4.661%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp23</h3>
@@ -5074,27 +6581,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.874</td>
+<td>-2.004</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.840</td>
+<td>62.332</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_10_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -5112,92 +6619,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s4/I2</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/I3</td>
 </tr>
 <tr>
-<td>5.082</td>
+<td>56.451</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_13_s18/F</td>
+</tr>
+<tr>
+<td>57.209</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s21/I3</td>
+</tr>
+<tr>
+<td>57.856</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_14_s21/F</td>
+</tr>
+<tr>
+<td>58.614</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s13/I1</td>
+</tr>
+<tr>
+<td>59.798</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s13/F</td>
+</tr>
+<tr>
+<td>60.556</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s11/I2</td>
+</tr>
+<tr>
+<td>61.574</td>
 <td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s4/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s11/F</td>
 </tr>
 <tr>
-<td>5.840</td>
+<td>62.332</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_10_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -5211,15 +6782,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -5227,7 +6798,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -5235,50 +6806,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_10_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_10_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_0_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_10_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.202, 43.327%; route: 2.422, 47.655%; tC2Q: 0.458, 9.018%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.680, 47.588%; route: 4.696, 47.751%; tC2Q: 0.458, 4.661%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp24</h3>
@@ -5286,27 +6865,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.874</td>
+<td>-1.983</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.840</td>
+<td>62.311</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.328</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_7_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -5324,92 +6903,156 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>8</td>
+<td>gw_gao_inst_0/u_la0_top/capture_windows_num_12_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>5</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_10_s15/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s4/I2</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_6_s10/I2</td>
 </tr>
 <tr>
-<td>5.082</td>
+<td>56.822</td>
 <td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s4/F</td>
+<td>10</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_6_s10/F</td>
 </tr>
 <tr>
-<td>5.840</td>
+<td>57.580</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s12/I0</td>
+</tr>
+<tr>
+<td>58.743</td>
+<td>1.163</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s12/F</td>
+</tr>
+<tr>
+<td>59.501</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s10/I3</td>
+</tr>
+<tr>
+<td>60.148</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s10/F</td>
+</tr>
+<tr>
+<td>60.906</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s13/I3</td>
+</tr>
+<tr>
+<td>61.553</td>
+<td>0.647</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_7_s13/F</td>
+</tr>
+<tr>
+<td>62.311</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_7_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -5423,15 +7066,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -5439,7 +7082,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -5447,50 +7090,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_7_s0/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
-<td>-0.043</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_7_s0</td>
+</tr>
+<tr>
+<td>60.328</td>
+<td>-0.400</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_1_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_addr_start_reg_7_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>6</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.202, 43.327%; route: 2.422, 47.655%; tC2Q: 0.458, 9.018%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.659, 47.476%; route: 4.696, 47.853%; tC2Q: 0.458, 4.671%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 <h3>Path&nbsp25</h3>
@@ -5498,27 +7149,27 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.874</td>
+<td>-0.759</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>5.840</td>
+<td>61.443</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>20.715</td>
+<td>60.685</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>debug_tx/cycle_counter_4_s0</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_rem_13_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>debug_tx/bit_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>clk[R]</td>
+<td>tck_pad_i[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -5536,92 +7187,140 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>0.000</td>
-<td>0.000</td>
+<td>50.000</td>
+<td>50.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
+<td>50.000</td>
 <td>0.000</td>
-<td>0.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>clk</td>
+<td>tck_pad_i</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
 <td>1</td>
-<td>clk_ibuf/I</td>
+<td>gw_gao_inst_0/tck_ibuf/I</td>
 </tr>
 <tr>
-<td>0.000</td>
+<td>50.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
-<td>clk_ibuf/O</td>
+<td>1</td>
+<td>gw_gao_inst_0/tck_ibuf/O</td>
 </tr>
 <tr>
-<td>0.758</td>
+<td>50.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/cycle_counter_4_s0/CLK</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_pad_i</td>
 </tr>
 <tr>
-<td>1.216</td>
+<td>51.740</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>241</td>
+<td>gw_gao_inst_0/u_gw_jtag_s/tck_o</td>
+</tr>
+<tr>
+<td>52.498</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_rem_13_s0/CLK</td>
+</tr>
+<tr>
+<td>52.956</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>2</td>
-<td>debug_tx/cycle_counter_4_s0/Q</td>
+<td>3</td>
+<td>gw_gao_inst_0/u_la0_top/capture_mem_addr_rem_13_s0/Q</td>
 </tr>
 <tr>
-<td>2.122</td>
+<td>53.862</td>
 <td>0.906</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>debug_tx/n420_s2/I1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s11/I1</td>
 </tr>
 <tr>
-<td>3.306</td>
+<td>55.046</td>
 <td>1.184</td>
 <td>tINS</td>
 <td>FR</td>
-<td>3</td>
-<td>debug_tx/n420_s2/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s11/F</td>
 </tr>
 <tr>
-<td>4.064</td>
+<td>55.804</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/n420_s4/I2</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s7/I1</td>
 </tr>
 <tr>
-<td>5.082</td>
+<td>56.988</td>
+<td>1.184</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s7/F</td>
+</tr>
+<tr>
+<td>57.746</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s5/I0</td>
+</tr>
+<tr>
+<td>58.909</td>
+<td>1.163</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s5/F</td>
+</tr>
+<tr>
+<td>59.667</td>
+<td>0.758</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s3/I2</td>
+</tr>
+<tr>
+<td>60.685</td>
 <td>1.018</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>debug_tx/n420_s4/F</td>
+<td>1</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s3/F</td>
 </tr>
 <tr>
-<td>5.840</td>
+<td>61.443</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0/CE</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s1/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -5635,15 +7334,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>20.000</td>
-<td>20.000</td>
+<td>60.000</td>
+<td>60.000</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td>active clock edge time</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -5651,7 +7350,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -5659,50 +7358,58 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v<br>
 <td>clk_ibuf/I</td>
 </tr>
 <tr>
-<td>20.000</td>
+<td>60.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>23</td>
+<td>387</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>20.758</td>
+<td>60.758</td>
 <td>0.758</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0/CLK</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s1/CLK</td>
 </tr>
 <tr>
-<td>20.715</td>
+<td>60.728</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s1</td>
+</tr>
+<tr>
+<td>60.685</td>
 <td>-0.043</td>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>debug_tx/bit_counter_2_s0</td>
+<td>gw_gao_inst_0/u_la0_top/u_ao_mem_ctrl/capture_mem_wr_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew:</td>
-<td>0.000</td>
+<td>-1.740</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>20.000</td>
+<td>10.000</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>3</td>
+<td>5</td>
 </tr>
 <tr>
-<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 2.202, 43.327%; route: 2.422, 47.655%; tC2Q: 0.458, 9.018%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.549, 50.853%; route: 3.938, 44.023%; tC2Q: 0.458, 5.124%</td></tr>
 <tr>
-<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.758, 100.000%</td></tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.982, 39.308%; route: 1.516, 60.692%</td></tr>
 </table>
 <br/>
 </div><!-- content -->

@@ -3,6 +3,8 @@
 -pn GW1NR-LV9QN88PC6/I5
 -cst C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\pinout.cst
 -cfg C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\device.cfg
+-sdc C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd_and_fat16.sdc
+-gao_crc 0010000011111111
 -bit
 -tr
 -ph
@@ -14,3 +16,4 @@
 -correct_hold 1
 -route_maxfan 23
 -global_freq 50.000
+-rtl_gao

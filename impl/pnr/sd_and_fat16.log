@@ -7,7 +7,7 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -26,5 +26,5 @@ Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.rpt.html" completed
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.rpt.txt" completed
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.tr.html" completed
-Thu Oct 15 21:53:37 2026
+Sun Oct 18 12:41:50 2026
 
