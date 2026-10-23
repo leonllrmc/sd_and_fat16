@@ -1,36 +1,37 @@
 {
-    "Device": "GW1NR-9C",
-    "Files": [
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/CRC7.sv",
-            "Type": "verilog"
-        },
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
-            "Type": "verilog"
-        },
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
-            "Type": "verilog"
-        },
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
-            "Type": "verilog"
-        },
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_rx.v",
-            "Type": "verilog"
-        },
-        {
-            "Path": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_tx.v",
-            "Type": "verilog"
-        }
-    ],
-    "IncludePath": [
-    ],
-    "LoopLimit": 2000,
-    "ResultFile": "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/impl/temp/rtl_parser.result",
-    "Top": "top",
-    "VerilogStd": "sysv",
-    "VhdlStd": "vhdl_93"
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/CRC7.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/uart_tx.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
 }

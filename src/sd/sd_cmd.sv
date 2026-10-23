@@ -51,7 +51,7 @@ module sd_cmd(
    reg [10:0] recv_byte_left;
       
    spi_master #(
-      .CLK_DIV(2) // 25 MHz = max, supposed to go down to about 400kHz during init tho
+      .CLK_DIV(4)//2) // 25 MHz = max, supposed to go down to about 400kHz during init tho
    ) spi (
       .clk(clk)         , // Top level system clock input.
       .rst_n(rst_n)      , // Asynchronous active low reset.
@@ -252,20 +252,21 @@ module sd_cmd(
                spi_send_pulse <= 1'b0;
 
                if(spi_done_pulse) begin
-                  if(use_data_mode && (spi_miso_data != 8'hFE))
-                     // data block starts with 0xFE char
-                     state <= STATE_RX_BYTE;
+                 //if(use_data_mode && (spi_miso_data != 8'hFE))
+                    // data block starts with 0xFE char
+                   // state <= STATE_RX_BYTE;
  //  else if((recv_byte_count == recv_byte_left) && (spi_miso_data[7]))
  //     // R1 reply (first byte of all) has byte 7 == 0
- //     state <= STATE_RX_BYTE;
-                  else begin
+ //     state <= STATE_RX_BYTE; this is note code, just to check if commment working
+                  //else begin
                      recv_data_ready <= 1'b1;
                      recv_data <= spi_miso_data;
 
-                     recv_byte_left <= recv_byte_left - 1;
+                     if(!(use_data_mode && (spi_miso_data != 8'hFE)))
+                        recv_byte_left <= recv_byte_left - 11'd1;
 
                      state <= STATE_AWAIT_GETNEXT;
-                  end
+                  //end
                end
             end
 

@@ -7,7 +7,9 @@ module top(
     input sd_spi_miso,
     output sd_spi_mosi,
     output sd_spi_sck,
-    output sd_spi_cs
+    output sd_spi_cs,
+
+    output [5:0] debug_leds
 );
 
    //assign sd_spi_cs = 1'b0;
@@ -17,6 +19,8 @@ module top(
    reg uart_rx_en;
    wire uart_rx_valid;
    wire [7:0] uart_rx_data;
+
+   reg sd_use_data_mode;
 
    uart_rx debug_rx(
       .clk(clk)         , // Top level system clock input.
@@ -68,13 +72,13 @@ module top(
 
    // at end => fetch 1 byte => ready = 1 =[ready=0]> when sendnext |^| => fetch 1 byte => ready,...
    // when all byte fetched => rdy = 1 && end = 1 (pulse)
-   .recv_byte_count({3'h0, sd_recv_count}),
+   .recv_byte_count({sd_recv_count[7], sd_recv_count[6], sd_recv_count[5], sd_recv_count}),
    .recv_data(sd_recv_data),
    .recv_data_sendnext(recv_data_sendnext), // when supervisor ready to recieve next recv data byte
    .recv_data_ready(recv_data_ready), // sent after data are avaible
    .recv_data_end(recv_data_end), // sent after recv_byte_count done (all bytes read)
 
-   .use_data_mode(1'b0), // todo: implement in debugger
+   .use_data_mode(sd_use_data_mode), // todo: implement in debugger
 
    // SPI master
    .sd_spi_miso(sd_spi_miso),
@@ -92,6 +96,8 @@ module top(
 
    reg [1:0] arg_send_index;
 
+   assign debug_leds = ~{2'b00, state};
+
    always_ff @(posedge clk or negedge rst_n) begin
       if(~rst_n) begin
          state <= STATE_AWAIT_BOOT;
@@ -100,6 +106,8 @@ module top(
          uart_rx_en <= 1'b1;
 
          arg_send_index <= 2'd0;
+
+         sd_use_data_mode <= 1'b0;
       end else begin
          case(state)
             STATE_AWAIT_BOOT: begin
@@ -114,15 +122,18 @@ module top(
             STATE_IDLE: begin
                   uart_tx_en <= 1'b0;
                   uart_rx_en <= 1'b1;
+                  sd_use_data_mode <= 1'b0;
 
                   if(uart_rx_valid) begin
-                     sd_cmd_id <= uart_rx_data[6:0];
+                     sd_cmd_id <= uart_rx_data[5:0];
                      
                      state <= STATE_RECV_CMD;
                   end
             end
 
             STATE_RECV_CMD: begin
+               if(sd_cmd_id == 5'h11)
+                  sd_use_data_mode <= 1'b1; 
 
                if(uart_rx_valid) begin
                   arg_send_index <= 2'd1;
@@ -135,7 +146,7 @@ module top(
 
             STATE_RECV_ARGS: begin
                if(uart_rx_valid) begin
-                  arg_send_index <= arg_send_index + 1;
+                  arg_send_index <= arg_send_index + 2'd1;
 
                   case(arg_send_index)
                      //2'd0: sd_cmd_arg[31:24] <= uart_rx_data;
@@ -164,9 +175,14 @@ module top(
 
             STATE_AWAIT_SDCMD: begin
                sd_cmd_send_pulse <= 1'b0;
+               recv_data_sendnext <= 1'b0;
 
                if(recv_data_ready) begin
-                  uart_tx_data <= 8'h23; // "#"
+                  //uart_tx_data <= 8'h23; // "#"
+                  
+                  sd_use_data_mode <= 1'b0;
+                  uart_tx_data <= sd_recv_data;
+
                   uart_tx_en <= 1'b1;
 
                   state <= STATE_DISPLAY_ACK;
@@ -177,6 +193,7 @@ module top(
                uart_tx_en <= 1'b0;
 
                if((!uart_tx_busy)) begin
+                  recv_data_sendnext <= 1'b1;
                   state <= STATE_DISPLAYBYTE;
                end
             end
@@ -187,10 +204,9 @@ module top(
                if(recv_data_end)
                   state <= STATE_IDLE;
                else if(recv_data_ready) begin
+
                   uart_tx_data <= sd_recv_data;
                   uart_tx_en <= 1'b1;
-
-                  recv_data_sendnext <= 1'b1;
 
                   state <= STATE_READBYTE;
                end
@@ -199,10 +215,10 @@ module top(
             STATE_READBYTE: begin
                uart_tx_en <= 1'b0;
 
-               recv_data_sendnext <= 1'b0;
-
-               if(!uart_tx_busy)
+               if(!uart_tx_busy) begin
+                  recv_data_sendnext <= 1'b1;
                   state <= STATE_DISPLAYBYTE;
+               end
             end
          endcase
       end

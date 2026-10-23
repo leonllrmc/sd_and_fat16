@@ -4,12 +4,13 @@
 -cst C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\pinout.cst
 -cfg C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\device.cfg
 -sdc C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd_and_fat16.sdc
--gao_crc 0010000011111111
+-gao_crc 0111010000001110
 -bit
 -tr
 -ph
 -timing
 -cst_error
+-convert_sdp32_36_to_sdp16_18
 -place_option 0
 -route_option 0
 -clock_route_order 0
