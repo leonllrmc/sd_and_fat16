@@ -1,45 +1,258 @@
 module gw_gao(
-    \sdCmd/recv_data_sendnext ,
-    \sdCmd/recv_data_ready ,
-    \sdCmd/recv_data_end ,
-    sd_cmd_busy,
-    \sdCmd/state[3] ,
-    \sdCmd/state[2] ,
-    \sdCmd/state[1] ,
-    \sdCmd/state[0] ,
-    sd_cmd_send_pulse,
+    \sd_rd/sd_recv_data[7] ,
+    \sd_rd/sd_recv_data[6] ,
+    \sd_rd/sd_recv_data[5] ,
+    \sd_rd/sd_recv_data[4] ,
+    \sd_rd/sd_recv_data[3] ,
+    \sd_rd/sd_recv_data[2] ,
+    \sd_rd/sd_recv_data[1] ,
+    \sd_rd/sd_recv_data[0] ,
+    \sd_rd/sd_use_data_mode ,
+    \sd_rd/sdCmd/spi_miso_data[7] ,
+    \sd_rd/sdCmd/spi_miso_data[6] ,
+    \sd_rd/sdCmd/spi_miso_data[5] ,
+    \sd_rd/sdCmd/spi_miso_data[4] ,
+    \sd_rd/sdCmd/spi_miso_data[3] ,
+    \sd_rd/sdCmd/spi_miso_data[2] ,
+    \sd_rd/sdCmd/spi_miso_data[1] ,
+    \sd_rd/sdCmd/spi_miso_data[0] ,
+    \sd_rd/sdCmd/cmd_id[5] ,
+    \sd_rd/sdCmd/cmd_id[4] ,
+    \sd_rd/sdCmd/cmd_id[3] ,
+    \sd_rd/sdCmd/cmd_id[2] ,
+    \sd_rd/sdCmd/cmd_id[1] ,
+    \sd_rd/sdCmd/cmd_id[0] ,
+    \sd_rd/sdCmd/spi_mosi_data[7] ,
+    \sd_rd/sdCmd/spi_mosi_data[6] ,
+    \sd_rd/sdCmd/spi_mosi_data[5] ,
+    \sd_rd/sdCmd/spi_mosi_data[4] ,
+    \sd_rd/sdCmd/spi_mosi_data[3] ,
+    \sd_rd/sdCmd/spi_mosi_data[2] ,
+    \sd_rd/sdCmd/spi_mosi_data[1] ,
+    \sd_rd/sdCmd/spi_mosi_data[0] ,
+    \sd_rd/sdCmd/recv_data_ready ,
+    \sd_rd/istate[4] ,
+    \sd_rd/istate[3] ,
+    \sd_rd/istate[2] ,
+    \sd_rd/istate[1] ,
+    \sd_rd/istate[0] ,
+    \sd_rd/state[3] ,
+    \sd_rd/state[2] ,
+    \sd_rd/state[1] ,
+    \sd_rd/state[0] ,
+    \sd_rd/init_done ,
+    \sd_rd/lba_index[1] ,
+    \sd_rd/lba_index[0] ,
+    \debug_LBA_block[31] ,
+    \debug_LBA_block[30] ,
+    \debug_LBA_block[29] ,
+    \debug_LBA_block[28] ,
+    \debug_LBA_block[27] ,
+    \debug_LBA_block[26] ,
+    \debug_LBA_block[25] ,
+    \debug_LBA_block[24] ,
+    \debug_LBA_block[23] ,
+    \debug_LBA_block[22] ,
+    \debug_LBA_block[21] ,
+    \debug_LBA_block[20] ,
+    \debug_LBA_block[19] ,
+    \debug_LBA_block[18] ,
+    \debug_LBA_block[17] ,
+    \debug_LBA_block[16] ,
+    \debug_LBA_block[15] ,
+    \debug_LBA_block[14] ,
+    \debug_LBA_block[13] ,
+    \debug_LBA_block[12] ,
+    \debug_LBA_block[11] ,
+    \debug_LBA_block[10] ,
+    \debug_LBA_block[9] ,
+    \debug_LBA_block[8] ,
+    \debug_LBA_block[7] ,
+    \debug_LBA_block[6] ,
+    \debug_LBA_block[5] ,
+    \debug_LBA_block[4] ,
+    \debug_LBA_block[3] ,
+    \debug_LBA_block[2] ,
+    \debug_LBA_block[1] ,
+    \debug_LBA_block[0] ,
+    \sd_rd/sdCmd/spi_send_pulse ,
     clk,
+    \sd_rd/sdCmd/recv_data_sendnext ,
+    \sd_rd/sd_cmd_busy ,
+    \sd_rd/sdCmd/spi/send ,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
     tdo_pad_o
 );
 
-input \sdCmd/recv_data_sendnext ;
-input \sdCmd/recv_data_ready ;
-input \sdCmd/recv_data_end ;
-input sd_cmd_busy;
-input \sdCmd/state[3] ;
-input \sdCmd/state[2] ;
-input \sdCmd/state[1] ;
-input \sdCmd/state[0] ;
-input sd_cmd_send_pulse;
+input \sd_rd/sd_recv_data[7] ;
+input \sd_rd/sd_recv_data[6] ;
+input \sd_rd/sd_recv_data[5] ;
+input \sd_rd/sd_recv_data[4] ;
+input \sd_rd/sd_recv_data[3] ;
+input \sd_rd/sd_recv_data[2] ;
+input \sd_rd/sd_recv_data[1] ;
+input \sd_rd/sd_recv_data[0] ;
+input \sd_rd/sd_use_data_mode ;
+input \sd_rd/sdCmd/spi_miso_data[7] ;
+input \sd_rd/sdCmd/spi_miso_data[6] ;
+input \sd_rd/sdCmd/spi_miso_data[5] ;
+input \sd_rd/sdCmd/spi_miso_data[4] ;
+input \sd_rd/sdCmd/spi_miso_data[3] ;
+input \sd_rd/sdCmd/spi_miso_data[2] ;
+input \sd_rd/sdCmd/spi_miso_data[1] ;
+input \sd_rd/sdCmd/spi_miso_data[0] ;
+input \sd_rd/sdCmd/cmd_id[5] ;
+input \sd_rd/sdCmd/cmd_id[4] ;
+input \sd_rd/sdCmd/cmd_id[3] ;
+input \sd_rd/sdCmd/cmd_id[2] ;
+input \sd_rd/sdCmd/cmd_id[1] ;
+input \sd_rd/sdCmd/cmd_id[0] ;
+input \sd_rd/sdCmd/spi_mosi_data[7] ;
+input \sd_rd/sdCmd/spi_mosi_data[6] ;
+input \sd_rd/sdCmd/spi_mosi_data[5] ;
+input \sd_rd/sdCmd/spi_mosi_data[4] ;
+input \sd_rd/sdCmd/spi_mosi_data[3] ;
+input \sd_rd/sdCmd/spi_mosi_data[2] ;
+input \sd_rd/sdCmd/spi_mosi_data[1] ;
+input \sd_rd/sdCmd/spi_mosi_data[0] ;
+input \sd_rd/sdCmd/recv_data_ready ;
+input \sd_rd/istate[4] ;
+input \sd_rd/istate[3] ;
+input \sd_rd/istate[2] ;
+input \sd_rd/istate[1] ;
+input \sd_rd/istate[0] ;
+input \sd_rd/state[3] ;
+input \sd_rd/state[2] ;
+input \sd_rd/state[1] ;
+input \sd_rd/state[0] ;
+input \sd_rd/init_done ;
+input \sd_rd/lba_index[1] ;
+input \sd_rd/lba_index[0] ;
+input \debug_LBA_block[31] ;
+input \debug_LBA_block[30] ;
+input \debug_LBA_block[29] ;
+input \debug_LBA_block[28] ;
+input \debug_LBA_block[27] ;
+input \debug_LBA_block[26] ;
+input \debug_LBA_block[25] ;
+input \debug_LBA_block[24] ;
+input \debug_LBA_block[23] ;
+input \debug_LBA_block[22] ;
+input \debug_LBA_block[21] ;
+input \debug_LBA_block[20] ;
+input \debug_LBA_block[19] ;
+input \debug_LBA_block[18] ;
+input \debug_LBA_block[17] ;
+input \debug_LBA_block[16] ;
+input \debug_LBA_block[15] ;
+input \debug_LBA_block[14] ;
+input \debug_LBA_block[13] ;
+input \debug_LBA_block[12] ;
+input \debug_LBA_block[11] ;
+input \debug_LBA_block[10] ;
+input \debug_LBA_block[9] ;
+input \debug_LBA_block[8] ;
+input \debug_LBA_block[7] ;
+input \debug_LBA_block[6] ;
+input \debug_LBA_block[5] ;
+input \debug_LBA_block[4] ;
+input \debug_LBA_block[3] ;
+input \debug_LBA_block[2] ;
+input \debug_LBA_block[1] ;
+input \debug_LBA_block[0] ;
+input \sd_rd/sdCmd/spi_send_pulse ;
 input clk;
+input \sd_rd/sdCmd/recv_data_sendnext ;
+input \sd_rd/sd_cmd_busy ;
+input \sd_rd/sdCmd/spi/send ;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
 output tdo_pad_o;
 
-wire \sdCmd/recv_data_sendnext ;
-wire \sdCmd/recv_data_ready ;
-wire \sdCmd/recv_data_end ;
-wire sd_cmd_busy;
-wire \sdCmd/state[3] ;
-wire \sdCmd/state[2] ;
-wire \sdCmd/state[1] ;
-wire \sdCmd/state[0] ;
-wire sd_cmd_send_pulse;
+wire \sd_rd/sd_recv_data[7] ;
+wire \sd_rd/sd_recv_data[6] ;
+wire \sd_rd/sd_recv_data[5] ;
+wire \sd_rd/sd_recv_data[4] ;
+wire \sd_rd/sd_recv_data[3] ;
+wire \sd_rd/sd_recv_data[2] ;
+wire \sd_rd/sd_recv_data[1] ;
+wire \sd_rd/sd_recv_data[0] ;
+wire \sd_rd/sd_use_data_mode ;
+wire \sd_rd/sdCmd/spi_miso_data[7] ;
+wire \sd_rd/sdCmd/spi_miso_data[6] ;
+wire \sd_rd/sdCmd/spi_miso_data[5] ;
+wire \sd_rd/sdCmd/spi_miso_data[4] ;
+wire \sd_rd/sdCmd/spi_miso_data[3] ;
+wire \sd_rd/sdCmd/spi_miso_data[2] ;
+wire \sd_rd/sdCmd/spi_miso_data[1] ;
+wire \sd_rd/sdCmd/spi_miso_data[0] ;
+wire \sd_rd/sdCmd/cmd_id[5] ;
+wire \sd_rd/sdCmd/cmd_id[4] ;
+wire \sd_rd/sdCmd/cmd_id[3] ;
+wire \sd_rd/sdCmd/cmd_id[2] ;
+wire \sd_rd/sdCmd/cmd_id[1] ;
+wire \sd_rd/sdCmd/cmd_id[0] ;
+wire \sd_rd/sdCmd/spi_mosi_data[7] ;
+wire \sd_rd/sdCmd/spi_mosi_data[6] ;
+wire \sd_rd/sdCmd/spi_mosi_data[5] ;
+wire \sd_rd/sdCmd/spi_mosi_data[4] ;
+wire \sd_rd/sdCmd/spi_mosi_data[3] ;
+wire \sd_rd/sdCmd/spi_mosi_data[2] ;
+wire \sd_rd/sdCmd/spi_mosi_data[1] ;
+wire \sd_rd/sdCmd/spi_mosi_data[0] ;
+wire \sd_rd/sdCmd/recv_data_ready ;
+wire \sd_rd/istate[4] ;
+wire \sd_rd/istate[3] ;
+wire \sd_rd/istate[2] ;
+wire \sd_rd/istate[1] ;
+wire \sd_rd/istate[0] ;
+wire \sd_rd/state[3] ;
+wire \sd_rd/state[2] ;
+wire \sd_rd/state[1] ;
+wire \sd_rd/state[0] ;
+wire \sd_rd/init_done ;
+wire \sd_rd/lba_index[1] ;
+wire \sd_rd/lba_index[0] ;
+wire \debug_LBA_block[31] ;
+wire \debug_LBA_block[30] ;
+wire \debug_LBA_block[29] ;
+wire \debug_LBA_block[28] ;
+wire \debug_LBA_block[27] ;
+wire \debug_LBA_block[26] ;
+wire \debug_LBA_block[25] ;
+wire \debug_LBA_block[24] ;
+wire \debug_LBA_block[23] ;
+wire \debug_LBA_block[22] ;
+wire \debug_LBA_block[21] ;
+wire \debug_LBA_block[20] ;
+wire \debug_LBA_block[19] ;
+wire \debug_LBA_block[18] ;
+wire \debug_LBA_block[17] ;
+wire \debug_LBA_block[16] ;
+wire \debug_LBA_block[15] ;
+wire \debug_LBA_block[14] ;
+wire \debug_LBA_block[13] ;
+wire \debug_LBA_block[12] ;
+wire \debug_LBA_block[11] ;
+wire \debug_LBA_block[10] ;
+wire \debug_LBA_block[9] ;
+wire \debug_LBA_block[8] ;
+wire \debug_LBA_block[7] ;
+wire \debug_LBA_block[6] ;
+wire \debug_LBA_block[5] ;
+wire \debug_LBA_block[4] ;
+wire \debug_LBA_block[3] ;
+wire \debug_LBA_block[2] ;
+wire \debug_LBA_block[1] ;
+wire \debug_LBA_block[0] ;
+wire \sd_rd/sdCmd/spi_send_pulse ;
 wire clk;
+wire \sd_rd/sdCmd/recv_data_sendnext ;
+wire \sd_rd/sd_cmd_busy ;
+wire \sd_rd/sdCmd/spi/send ;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -49,6 +262,7 @@ wire tck_i_c;
 wire tdi_i_c;
 wire tdo_o_c;
 wire [9:0] control0;
+wire [9:0] control1;
 wire gao_jtag_tck;
 wire gao_jtag_reset;
 wire run_test_idle_er1;
@@ -106,6 +320,7 @@ gw_con_top  u_icon_top(
     .tdo_o(tdo_er1),
     .rst_i(gao_jtag_reset),
     .control0(control0[9:0]),
+    .control1(control1[9:0]),
     .enable_i(enable_er1),
     .shift_dr_capture_dr_i(shift_dr_capture_dr),
     .update_dr_i(update_dr)
@@ -113,8 +328,15 @@ gw_con_top  u_icon_top(
 
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
-    .trig0_i(sd_cmd_send_pulse),
-    .data_i({\sdCmd/recv_data_sendnext ,\sdCmd/recv_data_ready ,\sdCmd/recv_data_end ,sd_cmd_busy,\sdCmd/state[3] ,\sdCmd/state[2] ,\sdCmd/state[1] ,\sdCmd/state[0] }),
+    .trig0_i(\sd_rd/sdCmd/spi_send_pulse ),
+    .data_i({\sd_rd/sd_recv_data[7] ,\sd_rd/sd_recv_data[6] ,\sd_rd/sd_recv_data[5] ,\sd_rd/sd_recv_data[4] ,\sd_rd/sd_recv_data[3] ,\sd_rd/sd_recv_data[2] ,\sd_rd/sd_recv_data[1] ,\sd_rd/sd_recv_data[0] ,\sd_rd/sd_use_data_mode ,\sd_rd/sdCmd/spi_miso_data[7] ,\sd_rd/sdCmd/spi_miso_data[6] ,\sd_rd/sdCmd/spi_miso_data[5] ,\sd_rd/sdCmd/spi_miso_data[4] ,\sd_rd/sdCmd/spi_miso_data[3] ,\sd_rd/sdCmd/spi_miso_data[2] ,\sd_rd/sdCmd/spi_miso_data[1] ,\sd_rd/sdCmd/spi_miso_data[0] ,\sd_rd/sdCmd/cmd_id[5] ,\sd_rd/sdCmd/cmd_id[4] ,\sd_rd/sdCmd/cmd_id[3] ,\sd_rd/sdCmd/cmd_id[2] ,\sd_rd/sdCmd/cmd_id[1] ,\sd_rd/sdCmd/cmd_id[0] ,\sd_rd/sdCmd/spi_mosi_data[7] ,\sd_rd/sdCmd/spi_mosi_data[6] ,\sd_rd/sdCmd/spi_mosi_data[5] ,\sd_rd/sdCmd/spi_mosi_data[4] ,\sd_rd/sdCmd/spi_mosi_data[3] ,\sd_rd/sdCmd/spi_mosi_data[2] ,\sd_rd/sdCmd/spi_mosi_data[1] ,\sd_rd/sdCmd/spi_mosi_data[0] ,\sd_rd/sdCmd/recv_data_ready ,\sd_rd/istate[4] ,\sd_rd/istate[3] ,\sd_rd/istate[2] ,\sd_rd/istate[1] ,\sd_rd/istate[0] ,\sd_rd/state[3] ,\sd_rd/state[2] ,\sd_rd/state[1] ,\sd_rd/state[0] ,\sd_rd/init_done ,\sd_rd/lba_index[1] ,\sd_rd/lba_index[0] ,\debug_LBA_block[31] ,\debug_LBA_block[30] ,\debug_LBA_block[29] ,\debug_LBA_block[28] ,\debug_LBA_block[27] ,\debug_LBA_block[26] ,\debug_LBA_block[25] ,\debug_LBA_block[24] ,\debug_LBA_block[23] ,\debug_LBA_block[22] ,\debug_LBA_block[21] ,\debug_LBA_block[20] ,\debug_LBA_block[19] ,\debug_LBA_block[18] ,\debug_LBA_block[17] ,\debug_LBA_block[16] ,\debug_LBA_block[15] ,\debug_LBA_block[14] ,\debug_LBA_block[13] ,\debug_LBA_block[12] ,\debug_LBA_block[11] ,\debug_LBA_block[10] ,\debug_LBA_block[9] ,\debug_LBA_block[8] ,\debug_LBA_block[7] ,\debug_LBA_block[6] ,\debug_LBA_block[5] ,\debug_LBA_block[4] ,\debug_LBA_block[3] ,\debug_LBA_block[2] ,\debug_LBA_block[1] ,\debug_LBA_block[0] }),
+    .clk_i(clk)
+);
+
+ao_top_1  u_la1_top(
+    .control(control1[9:0]),
+    .trig0_i(\sd_rd/sdCmd/spi/send ),
+    .data_i({\sd_rd/istate[4] ,\sd_rd/istate[3] ,\sd_rd/istate[2] ,\sd_rd/istate[1] ,\sd_rd/istate[0] ,\sd_rd/sdCmd/spi_miso_data[7] ,\sd_rd/sdCmd/spi_miso_data[6] ,\sd_rd/sdCmd/spi_miso_data[5] ,\sd_rd/sdCmd/spi_miso_data[4] ,\sd_rd/sdCmd/spi_miso_data[3] ,\sd_rd/sdCmd/spi_miso_data[2] ,\sd_rd/sdCmd/spi_miso_data[1] ,\sd_rd/sdCmd/spi_miso_data[0] ,\sd_rd/sdCmd/recv_data_ready ,\sd_rd/sdCmd/recv_data_sendnext ,\sd_rd/sd_cmd_busy }),
     .clk_i(clk)
 );
 

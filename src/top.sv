@@ -58,27 +58,36 @@ module top(
    wire recv_data_ready;
    wire recv_data_end;
 
-   // MARK: sd cmd
-   sd_cmd sdCmd (
+
+wire [31:0] debug_LBA_block;
+wire bsy;
+sd_rd_block sd_rd(
    .clk(clk),
    .rst_n(rst_n),
 
-   // to next layer
-   .cmd_send_pulse(sd_cmd_send_pulse),
-   .cmd_id(sd_cmd_id),
-   .cmd_arg(sd_cmd_arg),
+   .block_index(0),
 
-   .cmd_busy(sd_cmd_busy),
+   .busy(bsy),
 
-   // at end => fetch 1 byte => ready = 1 =[ready=0]> when sendnext |^| => fetch 1 byte => ready,...
-   // when all byte fetched => rdy = 1 && end = 1 (pulse)
-   .recv_byte_count({sd_recv_count[7], sd_recv_count[6], sd_recv_count[5], sd_recv_count}),
-   .recv_data(sd_recv_data),
-   .recv_data_sendnext(recv_data_sendnext), // when supervisor ready to recieve next recv data byte
-   .recv_data_ready(recv_data_ready), // sent after data are avaible
-   .recv_data_end(recv_data_end), // sent after recv_byte_count done (all bytes read)
+  .start_read(0),
+  .start_write(0),
 
-   .use_data_mode(sd_use_data_mode), // todo: implement in debugger
+   .read_stream_data(),
+   .read_stream_data_ready(),
+   .read_stream_data_sendnext(0),
+
+   // only doing read for now, because would need to modify whole sd_cmd block
+   //input [7:0] write_stream_data,
+   //input write_stream_data_ready,
+   //output reg write_stream_data_sendnext,
+
+
+   .stream_end(), // when read/write sent count is good (512)
+   .stream_error(),
+   .last_R1(),
+
+   .debug_LBA_block(debug_LBA_block),
+
 
    // SPI master
    .sd_spi_miso(sd_spi_miso),
@@ -87,7 +96,11 @@ module top(
    .sd_spi_cs(sd_spi_cs)
 );
 
+assign debug_leds[3:0] = debug_LBA_block[27:24];
+assign debug_leds[4] = bsy;
+assign debug_leds[5] = rst_n;
 
+   /*
    // at end of await boot => send char
    typedef enum logic[3:0] {STATE_AWAIT_BOOT, STATE_IDLE, STATE_RECV_CMD, STATE_RECV_ARGS,
                            STATE_RECV_BYTECOUNT, STATE_AWAIT_SDCMD, STATE_DISPLAY_ACK, 
@@ -97,6 +110,7 @@ module top(
    reg [1:0] arg_send_index;
 
    assign debug_leds = ~{2'b00, state};
+
 
    always_ff @(posedge clk or negedge rst_n) begin
       if(~rst_n) begin
@@ -223,6 +237,8 @@ module top(
          endcase
       end
    end
+
+   */
 
 
 endmodule

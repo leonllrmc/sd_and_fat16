@@ -25,27 +25,37 @@
    },
    {
     "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/top.sv",
-    "InstLine" : 62,
-    "InstName" : "sdCmd",
-    "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+    "InstLine" : 64,
+    "InstName" : "sd_rd",
+    "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_rd_block.sv",
     "ModuleLine" : 1,
-    "ModuleName" : "sd_cmd",
+    "ModuleName" : "sd_rd_block",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
-      "InstLine" : 34,
-      "InstName" : "crc_gen",
-      "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/CRC7.sv",
+      "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_rd_block.sv",
+      "InstLine" : 77,
+      "InstName" : "sdCmd",
+      "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
       "ModuleLine" : 1,
-      "ModuleName" : "CRC7"
-     },
-     {
-      "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
-      "InstLine" : 55,
-      "InstName" : "spi",
-      "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
-      "ModuleLine" : 31,
-      "ModuleName" : "spi_master"
+      "ModuleName" : "sd_cmd",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+        "InstLine" : 35,
+        "InstName" : "crc_gen",
+        "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/CRC7.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "CRC7"
+       },
+       {
+        "InstFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_cmd.sv",
+        "InstLine" : 56,
+        "InstName" : "spi",
+        "ModuleFile" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
+        "ModuleLine" : 31,
+        "ModuleName" : "spi_master"
+       }
+      ]
      }
     ]
    }

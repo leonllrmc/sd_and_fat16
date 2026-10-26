@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="64" Lut="60" T_Register="525(64)" T_Alu="24(0)" T_Lut="1077(60)" T_Bsram="1(0)">
- <SubModule name="debug_rx" Register="33" Alu="7" Lut="22" T_Register="33(33)" T_Alu="7(7)" T_Lut="22(22)"/>
- <SubModule name="debug_tx" Register="24" Alu="8" Lut="28" T_Register="24(24)" T_Alu="8(8)" T_Lut="28(28)"/>
- <SubModule name="sdCmd" Register="43" Lut="139" T_Register="148(43)" T_Lut="631(139)">
-  <SubModule name="crc_gen" Register="63" Lut="451" T_Register="63(63)" T_Lut="451(451)"/>
-  <SubModule name="spi" Register="42" Lut="41" T_Register="42(42)" T_Lut="41(41)"/>
+<Module name="top" T_Register="1074(0)" T_Alu="42(0)" T_Lut="1964(0)" T_Bsram="9(0)" T_Ssram="160(0)">
+ <SubModule name="gw_gao_inst_0" Register="842" Alu="26" Lut="1161" Bsram="9" Ssram="160" T_Register="842(842)" T_Alu="26(26)" T_Lut="1161(1161)" T_Bsram="9(9)" T_Ssram="160(160)"/>
+ <SubModule name="debug_tx" Register="16" Alu="8" Lut="19" T_Register="16(16)" T_Alu="8(8)" T_Lut="19(19)"/>
+ <SubModule name="sd_rd" Register="68" Alu="8" Lut="98" T_Register="216(68)" T_Alu="8(8)" T_Lut="784(98)">
+  <SubModule name="sdCmd" Register="43" Lut="129" T_Register="148(43)" T_Lut="686(129)">
+   <SubModule name="crc_gen" Register="63" Lut="511" T_Register="63(63)" T_Lut="511(511)"/>
+   <SubModule name="spi" Register="42" Lut="46" T_Register="42(42)" T_Lut="46(46)"/>
+  </SubModule>
  </SubModule>
- <SubModule name="gw_gao_inst_0" Register="256" Alu="9" Lut="336" Bsram="1" T_Register="256(256)" T_Alu="9(9)" T_Lut="336(336)" T_Bsram="1(1)"/>
 </Module>

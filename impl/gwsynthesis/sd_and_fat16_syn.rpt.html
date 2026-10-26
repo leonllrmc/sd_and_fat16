@@ -57,6 +57,7 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 <td class="label">Design File</td>
 <td>C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv<br>
+C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_rx.v<br>
@@ -65,6 +66,10 @@ C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32
 C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
 C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v<br>
 C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v<br>
+C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_crc32.v<br>
+C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v<br>
+C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v<br>
+C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v<br>
 C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v<br>
 C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\gw_jtag.v<br>
 C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
@@ -92,7 +97,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Oct 23 18:27:25 2026
+<td>Sun Oct 25 22:12:55 2026
 </td>
 </tr>
 <tr>
@@ -108,11 +113,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.189s, Peak memory usage = 341.273MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.054s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.02s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.056s, Peak memory usage = 341.273MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.014s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 341.273MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.057s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.02s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.008s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 341.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.092s, Peak memory usage = 341.273MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.041s, Peak memory usage = 341.273MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.296s, Elapsed time = 0h 0m 0.327s, Peak memory usage = 376.762MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.091s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.034s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.092s, Peak memory usage = 376.762MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.031s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 376.762MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.139s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.035s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.016s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 376.762MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.136s, Peak memory usage = 376.762MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.085s, Peak memory usage = 376.762MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 341.273MB</td>
+<td>CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 376.762MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -128,11 +133,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label"><b>I/O Buf </b></td>
-<td>18</td>
+<td>17</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
-<td>7</td>
+<td>6</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
@@ -140,59 +145,59 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>525</td>
+<td>1074</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
-<td>19</td>
+<td>200</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
-<td>86</td>
+<td>49</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
-<td>3</td>
+<td>1</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
-<td>18</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
-<td>39</td>
+<td>11</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
-<td>3</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
-<td>41</td>
+<td>74</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
-<td>34</td>
+<td>62</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
-<td>282</td>
+<td>666</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>1059</td>
+<td>1949</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>117</td>
+<td>173</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>276</td>
+<td>719</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>666</td>
+<td>1057</td>
 </tr>
 <tr>
 <td class="label"><b>MUX </b></td>
@@ -204,27 +209,35 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label"><b>ALU </b></td>
-<td>24</td>
+<td>42</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
-<td>24</td>
+<td>42</td>
+</tr>
+<tr>
+<td class="label"><b>SSRAM </b></td>
+<td>160</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16SDP4</td>
+<td>160</td>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
-<td>10</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
-<td>10</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label"><b>BSRAM </b></td>
-<td>1</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
-<td>1</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label"><b>Black Box </b></td>
@@ -244,13 +257,13 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>1101(1077 LUT, 24 ALU) / 8640</td>
-<td>13%</td>
+<td>2966(1964 LUT, 42 ALU, 160 RAM16) / 8640</td>
+<td>35%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>525 / 6693</td>
-<td>8%</td>
+<td>1074 / 6693</td>
+<td>17%</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as Latch</td>
@@ -259,13 +272,13 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>525 / 6693</td>
-<td>8%</td>
+<td>1074 / 6693</td>
+<td>17%</td>
 </tr>
 <tr>
 <td class="label">BSRAM</td>
-<td>1 / 26</td>
-<td>4%</td>
+<td>9 / 26</td>
+<td>35%</td>
 </tr>
 </table>
 <h1><a name="timing">Timing</a></h1>
@@ -310,8 +323,8 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>1</td>
 <td>clk</td>
 <td>50.000(MHz)</td>
-<td>66.025(MHz)</td>
-<td>7</td>
+<td>58.842(MHz)</td>
+<td>8</td>
 <td>TOP</td>
 </tr>
 </table>
@@ -321,11 +334,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>4.854</td>
+<td>3.005</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.828</td>
+<td>17.677</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -333,11 +346,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">From</td>
-<td>sdCmd/crc_gen/crc_val_31_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>sdCmd/crc_gen/crc_val_43_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -379,7 +392,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -388,15 +401,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>4</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/Q</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -404,7 +417,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -412,7 +425,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/F</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -420,7 +433,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/I1</td>
 </tr>
 <tr>
 <td>4.352</td>
@@ -428,7 +441,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/O</td>
 </tr>
 <tr>
 <td>5.312</td>
@@ -436,7 +449,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/I1</td>
 </tr>
 <tr>
 <td>5.475</td>
@@ -444,7 +457,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/O</td>
 </tr>
 <tr>
 <td>6.435</td>
@@ -452,7 +465,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/I1</td>
 </tr>
 <tr>
 <td>6.598</td>
@@ -460,7 +473,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/O</td>
 </tr>
 <tr>
 <td>7.558</td>
@@ -468,15 +481,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s108/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/I1</td>
 </tr>
 <tr>
 <td>7.721</td>
 <td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/n81_s108/O</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/O</td>
 </tr>
 <tr>
 <td>8.681</td>
@@ -484,15 +497,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/I2</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/I2</td>
 </tr>
 <tr>
 <td>9.503</td>
 <td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>43</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/F</td>
 </tr>
 <tr>
 <td>10.463</td>
@@ -500,55 +513,71 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_40_s6/I0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/I2</td>
 </tr>
 <tr>
-<td>11.495</td>
-<td>1.032</td>
+<td>11.285</td>
+<td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/crc_val_40_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/F</td>
 </tr>
 <tr>
-<td>12.455</td>
+<td>12.245</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s8/I3</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/I3</td>
 </tr>
 <tr>
-<td>13.081</td>
+<td>12.871</td>
 <td>0.626</td>
 <td>tINS</td>
 <td>FF</td>
-<td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s8/F</td>
+<td>28</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/F</td>
 </tr>
 <tr>
-<td>14.041</td>
+<td>13.831</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s4/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/I1</td>
 </tr>
 <tr>
-<td>15.102</td>
+<td>14.930</td>
+<td>1.099</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/F</td>
+</tr>
+<tr>
+<td>15.890</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s4/I1</td>
+</tr>
+<tr>
+<td>16.951</td>
 <td>1.061</td>
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s4/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s4/F</td>
 </tr>
 <tr>
-<td>15.828</td>
+<td>17.677</td>
 <td>0.726</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s0/CE</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s0/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -582,7 +611,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -591,7 +620,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s0/CLK</td>
 </tr>
 <tr>
 <td>20.683</td>
@@ -599,7 +628,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_43_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_17_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -614,12 +643,12 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 5.278, 34.948%; route: 9.366, 62.017%; tC2Q: 0.458, 3.035%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.167, 36.381%; route: 10.326, 60.915%; tC2Q: 0.458, 2.704%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -629,11 +658,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>4.854</td>
+<td>3.005</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.828</td>
+<td>17.677</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -641,11 +670,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">From</td>
-<td>sdCmd/crc_gen/crc_val_31_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>sdCmd/crc_gen/crc_val_45_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -687,7 +716,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -696,15 +725,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>4</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/Q</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -712,7 +741,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -720,7 +749,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/F</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -728,7 +757,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/I1</td>
 </tr>
 <tr>
 <td>4.352</td>
@@ -736,7 +765,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/O</td>
 </tr>
 <tr>
 <td>5.312</td>
@@ -744,7 +773,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/I1</td>
 </tr>
 <tr>
 <td>5.475</td>
@@ -752,7 +781,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/O</td>
 </tr>
 <tr>
 <td>6.435</td>
@@ -760,7 +789,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/I1</td>
 </tr>
 <tr>
 <td>6.598</td>
@@ -768,7 +797,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/O</td>
 </tr>
 <tr>
 <td>7.558</td>
@@ -776,15 +805,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s108/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/I1</td>
 </tr>
 <tr>
 <td>7.721</td>
 <td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/n81_s108/O</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/O</td>
 </tr>
 <tr>
 <td>8.681</td>
@@ -792,15 +821,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/I2</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/I2</td>
 </tr>
 <tr>
 <td>9.503</td>
 <td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>43</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/F</td>
 </tr>
 <tr>
 <td>10.463</td>
@@ -808,55 +837,71 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_40_s6/I0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/I2</td>
 </tr>
 <tr>
-<td>11.495</td>
-<td>1.032</td>
+<td>11.285</td>
+<td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/crc_val_40_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/F</td>
 </tr>
 <tr>
-<td>12.455</td>
+<td>12.245</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s11/I3</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/I3</td>
 </tr>
 <tr>
-<td>13.081</td>
+<td>12.871</td>
 <td>0.626</td>
 <td>tINS</td>
 <td>FF</td>
-<td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s11/F</td>
+<td>28</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/F</td>
 </tr>
 <tr>
-<td>14.041</td>
+<td>13.831</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s4/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/I1</td>
 </tr>
 <tr>
-<td>15.102</td>
+<td>14.930</td>
+<td>1.099</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/F</td>
+</tr>
+<tr>
+<td>15.890</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s4/I1</td>
+</tr>
+<tr>
+<td>16.951</td>
 <td>1.061</td>
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s4/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s4/F</td>
 </tr>
 <tr>
-<td>15.828</td>
+<td>17.677</td>
 <td>0.726</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s0/CE</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s0/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -890,7 +935,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -899,7 +944,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s0/CLK</td>
 </tr>
 <tr>
 <td>20.683</td>
@@ -907,7 +952,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_45_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_21_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -922,12 +967,12 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 5.278, 34.948%; route: 9.366, 62.017%; tC2Q: 0.458, 3.035%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.167, 36.381%; route: 10.326, 60.915%; tC2Q: 0.458, 2.704%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -937,11 +982,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>6.373</td>
+<td>3.005</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>14.309</td>
+<td>17.677</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -949,11 +994,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">From</td>
-<td>sdCmd/crc_gen/crc_val_31_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>sdCmd/crc_gen/crc_val_41_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -995,7 +1040,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1004,15 +1049,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>4</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/Q</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -1020,7 +1065,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -1028,7 +1073,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/F</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -1036,7 +1081,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/I1</td>
 </tr>
 <tr>
 <td>4.352</td>
@@ -1044,7 +1089,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/O</td>
 </tr>
 <tr>
 <td>5.312</td>
@@ -1052,7 +1097,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/I1</td>
 </tr>
 <tr>
 <td>5.475</td>
@@ -1060,7 +1105,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/O</td>
 </tr>
 <tr>
 <td>6.435</td>
@@ -1068,7 +1113,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/I1</td>
 </tr>
 <tr>
 <td>6.598</td>
@@ -1076,7 +1121,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/O</td>
 </tr>
 <tr>
 <td>7.558</td>
@@ -1084,15 +1129,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s108/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/I1</td>
 </tr>
 <tr>
 <td>7.721</td>
 <td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/n81_s108/O</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/O</td>
 </tr>
 <tr>
 <td>8.681</td>
@@ -1100,15 +1145,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/I2</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/I2</td>
 </tr>
 <tr>
 <td>9.503</td>
 <td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>43</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/F</td>
 </tr>
 <tr>
 <td>10.463</td>
@@ -1116,39 +1161,71 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s6/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/I2</td>
 </tr>
 <tr>
-<td>11.562</td>
-<td>1.099</td>
+<td>11.285</td>
+<td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s6/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/F</td>
 </tr>
 <tr>
-<td>12.522</td>
+<td>12.245</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s4/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/I3</td>
 </tr>
 <tr>
-<td>13.583</td>
+<td>12.871</td>
+<td>0.626</td>
+<td>tINS</td>
+<td>FF</td>
+<td>28</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/F</td>
+</tr>
+<tr>
+<td>13.831</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/I1</td>
+</tr>
+<tr>
+<td>14.930</td>
+<td>1.099</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s5/F</td>
+</tr>
+<tr>
+<td>15.890</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s4/I1</td>
+</tr>
+<tr>
+<td>16.951</td>
 <td>1.061</td>
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s4/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s4/F</td>
 </tr>
 <tr>
-<td>14.309</td>
+<td>17.677</td>
 <td>0.726</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s0/CE</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s0/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1182,7 +1259,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1191,7 +1268,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s0/CLK</td>
 </tr>
 <tr>
 <td>20.683</td>
@@ -1199,7 +1276,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_41_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_23_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1214,12 +1291,12 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>6</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.719, 34.741%; route: 8.406, 61.885%; tC2Q: 0.458, 3.374%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.167, 36.381%; route: 10.326, 60.915%; tC2Q: 0.458, 2.704%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -1229,11 +1306,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>6.408</td>
+<td>3.264</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>14.274</td>
+<td>17.418</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1241,11 +1318,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">From</td>
-<td>sdCmd/crc_gen/crc_val_31_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>sdCmd/crc_gen/crc_val_42_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1287,7 +1364,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1296,15 +1373,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>4</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/Q</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -1312,7 +1389,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -1320,7 +1397,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/F</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -1328,7 +1405,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/I1</td>
 </tr>
 <tr>
 <td>4.352</td>
@@ -1336,7 +1413,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/O</td>
 </tr>
 <tr>
 <td>5.312</td>
@@ -1344,7 +1421,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/I1</td>
 </tr>
 <tr>
 <td>5.475</td>
@@ -1352,7 +1429,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/O</td>
 </tr>
 <tr>
 <td>6.435</td>
@@ -1360,7 +1437,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/I1</td>
 </tr>
 <tr>
 <td>6.598</td>
@@ -1368,7 +1445,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/O</td>
 </tr>
 <tr>
 <td>7.558</td>
@@ -1376,15 +1453,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s108/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/I1</td>
 </tr>
 <tr>
 <td>7.721</td>
 <td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/n81_s108/O</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/O</td>
 </tr>
 <tr>
 <td>8.681</td>
@@ -1392,15 +1469,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/I2</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/I2</td>
 </tr>
 <tr>
 <td>9.503</td>
 <td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>43</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/F</td>
 </tr>
 <tr>
 <td>10.463</td>
@@ -1408,39 +1485,71 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s5/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/I2</td>
 </tr>
 <tr>
-<td>11.562</td>
-<td>1.099</td>
+<td>11.285</td>
+<td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s5/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/F</td>
 </tr>
 <tr>
-<td>12.522</td>
+<td>12.245</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s4/I0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/I3</td>
 </tr>
 <tr>
-<td>13.548</td>
-<td>1.026</td>
+<td>12.871</td>
+<td>0.626</td>
+<td>tINS</td>
+<td>FF</td>
+<td>28</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/F</td>
+</tr>
+<tr>
+<td>13.831</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s5/I1</td>
+</tr>
+<tr>
+<td>14.930</td>
+<td>1.099</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s5/F</td>
+</tr>
+<tr>
+<td>15.890</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s6/I2</td>
+</tr>
+<tr>
+<td>16.692</td>
+<td>0.802</td>
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s4/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s6/F</td>
 </tr>
 <tr>
-<td>14.274</td>
+<td>17.418</td>
 <td>0.726</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s0/CE</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s0/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1474,7 +1583,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1483,7 +1592,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s0/CLK</td>
 </tr>
 <tr>
 <td>20.683</td>
@@ -1491,7 +1600,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_42_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_33_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1506,12 +1615,12 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>6</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.684, 34.573%; route: 8.406, 62.044%; tC2Q: 0.458, 3.383%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.908, 35.393%; route: 10.326, 61.861%; tC2Q: 0.458, 2.746%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -1521,11 +1630,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>6.440</td>
+<td>3.282</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>14.242</td>
+<td>17.400</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1533,11 +1642,11 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">From</td>
-<td>sdCmd/crc_gen/crc_val_31_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>sdCmd/crc_gen/crc_val_0_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1579,7 +1688,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1588,15 +1697,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>4</td>
-<td>sdCmd/crc_gen/crc_val_31_s0/Q</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_31_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -1604,7 +1713,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -1612,7 +1721,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s149/F</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s149/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -1620,7 +1729,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/I1</td>
 </tr>
 <tr>
 <td>4.352</td>
@@ -1628,7 +1737,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s129/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s129/O</td>
 </tr>
 <tr>
 <td>5.312</td>
@@ -1636,7 +1745,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/I1</td>
 </tr>
 <tr>
 <td>5.475</td>
@@ -1644,7 +1753,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s119/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s119/O</td>
 </tr>
 <tr>
 <td>6.435</td>
@@ -1652,7 +1761,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/I1</td>
 </tr>
 <tr>
 <td>6.598</td>
@@ -1660,7 +1769,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s115/O</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s115/O</td>
 </tr>
 <tr>
 <td>7.558</td>
@@ -1668,15 +1777,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/n81_s108/I1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/I1</td>
 </tr>
 <tr>
 <td>7.721</td>
 <td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>sdCmd/crc_gen/n81_s108/O</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/n81_s108/O</td>
 </tr>
 <tr>
 <td>8.681</td>
@@ -1684,15 +1793,15 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/I2</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/I2</td>
 </tr>
 <tr>
 <td>9.503</td>
 <td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
-<td>43</td>
-<td>sdCmd/crc_gen/crc_val_44_s6/F</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s21/F</td>
 </tr>
 <tr>
 <td>10.463</td>
@@ -1700,39 +1809,71 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s6/I0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/I2</td>
 </tr>
 <tr>
-<td>11.495</td>
-<td>1.032</td>
+<td>11.285</td>
+<td>0.822</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s6/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s10/F</td>
 </tr>
 <tr>
-<td>12.455</td>
+<td>12.245</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s4/I1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/I3</td>
 </tr>
 <tr>
-<td>13.516</td>
+<td>12.871</td>
+<td>0.626</td>
+<td>tINS</td>
+<td>FF</td>
+<td>28</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_35_s6/F</td>
+</tr>
+<tr>
+<td>13.831</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_7_s7/I2</td>
+</tr>
+<tr>
+<td>14.653</td>
+<td>0.822</td>
+<td>tINS</td>
+<td>FF</td>
+<td>6</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_7_s7/F</td>
+</tr>
+<tr>
+<td>15.613</td>
+<td>0.960</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s4/I1</td>
+</tr>
+<tr>
+<td>16.674</td>
 <td>1.061</td>
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s4/F</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s4/F</td>
 </tr>
 <tr>
-<td>14.242</td>
+<td>17.400</td>
 <td>0.726</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s0/CE</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s0/CE</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1766,7 +1907,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>330</td>
+<td>703</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1775,7 +1916,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s0/CLK</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s0/CLK</td>
 </tr>
 <tr>
 <td>20.683</td>
@@ -1783,7 +1924,7 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>sdCmd/crc_gen/crc_val_0_s0</td>
+<td>sd_rd/sdCmd/crc_gen/crc_val_1_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1798,12 +1939,12 @@ C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>6</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.652, 34.418%; route: 8.406, 62.191%; tC2Q: 0.458, 3.391%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.890, 35.324%; route: 10.326, 61.927%; tC2Q: 0.458, 2.749%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>

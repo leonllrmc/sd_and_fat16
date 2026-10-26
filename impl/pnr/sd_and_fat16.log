@@ -3,6 +3,7 @@ Parsing netlist file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\im
 Processing netlist completed
 Reading constraint file: "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\pinout.cst"
 Physical Constraint parsed completed
+WARN  (TA1061) : Cannot find objects matching with 'sdCmd'
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
@@ -26,5 +27,5 @@ Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.rpt.html" completed
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.rpt.txt" completed
 Generate file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\sd_and_fat16.tr.html" completed
-Fri Oct 23 18:27:28 2026
+Sun Oct 25 22:12:59 2026
 

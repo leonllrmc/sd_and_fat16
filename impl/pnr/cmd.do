@@ -4,7 +4,7 @@
 -cst C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\pinout.cst
 -cfg C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\pnr\device.cfg
 -sdc C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd_and_fat16.sdc
--gao_crc 0111010000001110
+-gao_crc 1001011010111101
 -bit
 -tr
 -ph

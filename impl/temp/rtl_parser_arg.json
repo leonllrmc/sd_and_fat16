@@ -10,6 +10,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/sd/sd_rd_block.sv",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "C:/Users/leonl/Documents/dev/FPGA/SD_tests/sd_and_fat16/src/spi_master.v",
    "Type" : "verilog"
   },

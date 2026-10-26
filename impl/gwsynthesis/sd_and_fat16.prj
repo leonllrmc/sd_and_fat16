@@ -6,6 +6,7 @@
     <FileList>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv" type="verilog"/>
+        <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv" type="verilog"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_rx.v" type="verilog"/>
@@ -15,6 +16,10 @@
         <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v" type="gao"/>
         <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>
         <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_crc32.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v" type="gao"/>
         <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v" type="gao"/>
         <File path="C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\gw_jtag.v" type="gao"/>
         <File path="C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\gw_gao_top.v" type="gao"/>

@@ -3,6 +3,7 @@ Reading property constraint file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_
 Running parser ...
 Analyzing Verilog file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv'
 Analyzing Verilog file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv'
+Analyzing Verilog file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv'
 Analyzing Verilog file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v'
 WARN  (EX2478) : Non-net output port 'sclk' cannot be initialized at declaration in SystemVerilog mode("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v":38)
 WARN  (EX2478) : Non-net output port 'dout' cannot be initialized at declaration in SystemVerilog mode("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v":45)
@@ -33,6 +34,28 @@ Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16
 Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
 Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
 Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_crc32.v'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v'
+Analyzing included file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_init.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v'
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v":1256)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v":1256)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'
+Analyzing included file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_expression.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_parameter.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_1\gw_ao_init.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
 Analyzing included file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
 Back to file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
@@ -43,9 +66,19 @@ Analyzing Verilog file 'C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\
 Compiling module 'top'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":1)
 Compiling module 'uart_rx'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_rx.v":27)
 Compiling module 'uart_tx'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\uart_tx.v":10)
+Compiling module 'sd_rd_block'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":1)
 Compiling module 'sd_cmd'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_cmd.sv":1)
 Compiling module 'CRC7'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\CRC7.sv":1)
 Compiling module 'spi_master'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\spi_master.v":31)
+WARN  (EX3670) : Actual bit length 10 differs from formal bit length 11 for port 'recv_byte_count'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":91)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":156)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":180)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'start_read'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":72)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'start_write'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":73)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'read_stream_data_sendnext'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":77)
+WARN  (EX1998) : Net 'uart_rx_en' does not have a driver("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":19)
+WARN  (EX1998) : Net 'uart_tx_en' does not have a driver("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":37)
+WARN  (EX1998) : Net 'uart_tx_data[7]' does not have a driver("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":38)
 Compiling module 'gw_gao'("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
@@ -54,9 +87,25 @@ Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\
 Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_top.v":3042)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v":1256)
+Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_mem_ctrl.v":1256)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_crc32.v":74)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\data\ipcores\GAO\GW_AO_1\gw_ao_match.v":374)
 Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "read_stream_data[7]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[6]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[5]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[4]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[3]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[2]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[1]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data[0]" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":12)
+WARN  (EX0211) : The output port "read_stream_data_ready" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":13)
+WARN  (EX0211) : The output port "stream_end" of module "sd_rd_block" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\sd\sd_rd_block.sv":22)
 [5%] Running netlist conversion ...
+WARN  (CV0016) : Input uart_rx is unused("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":4)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -72,6 +121,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "uart_rx" instantiated to "debug_rx" is swept in optimizing("C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\src\top.sv":33)
 [95%] Generate netlist file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\sd_and_fat16.vg" completed
 [100%] Generate report file "C:\Users\leonl\Documents\dev\FPGA\SD_tests\sd_and_fat16\impl\gwsynthesis\sd_and_fat16_syn.rpt.html" completed
 GowinSynthesis finish

@@ -18,6 +18,7 @@ module sd_cmd(
    output reg recv_data_end, // sent after recv_byte_count done (all bytes read)
 
    input use_data_mode,
+   input disable_response_preample_skip,
 
    // SPI master
    input sd_spi_miso,
@@ -86,8 +87,8 @@ module sd_cmd(
    typedef enum logic[3:0] {STATE_START, STATE_SDPOWERUP, STATE_IDLE,
                            STATE_ASSERT_BEFORECS, STATE_ASSERT_AFTERCS, STATE_SEND_CMD, START_SEND_ARGS, 
                            /* CRC should be done at that time*/ STATE_CHECK_CRC_DONE, STATE_SEND_CRC,
-                           STATE_RX_BYTE, STATE_RX_RECV, STATE_AWAIT_GETNEXT, STATE_DEASSERT_BEFORECS, STATE_DEASSERT_INTCS, STATE_DEASSERT_AFTERCS} crc_compute_state;
-   crc_compute_state state;
+                           STATE_RX_BYTE, STATE_RX_RECV, STATE_AWAIT_GETNEXT, STATE_DEASSERT_BEFORECS, STATE_DEASSERT_INTCS, STATE_DEASSERT_AFTERCS} sd_cmd_state;
+   sd_cmd_state state;
 
    reg [3:0] sd_powerup_counter;
    reg [1:0] arg_send_index;
@@ -251,22 +252,22 @@ module sd_cmd(
             STATE_RX_RECV: begin
                spi_send_pulse <= 1'b0;
 
-               if(spi_done_pulse) begin
-                 //if(use_data_mode && (spi_miso_data != 8'hFE))
-                    // data block starts with 0xFE char
-                   // state <= STATE_RX_BYTE;
- //  else if((recv_byte_count == recv_byte_left) && (spi_miso_data[7]))
- //     // R1 reply (first byte of all) has byte 7 == 0
- //     state <= STATE_RX_BYTE; this is note code, just to check if commment working
-                  //else begin
+            if(spi_done_pulse) begin
+              if(use_data_mode && (spi_miso_data != 8'hFE))
+                  // data block starts with 0xFE char
+                  state <= STATE_RX_BYTE;
+             else if((recv_byte_count == recv_byte_left) && (spi_miso_data[7]) && !disable_response_preample_skip)
+                // R1 reply (first byte of all) has byte 7 == 0
+                state <= STATE_RX_BYTE; 
+               else begin
                      recv_data_ready <= 1'b1;
                      recv_data <= spi_miso_data;
 
-                     if(!(use_data_mode && (spi_miso_data != 8'hFE)))
-                        recv_byte_left <= recv_byte_left - 11'd1;
+                     //if(!(use_data_mode && (spi_miso_data != 8'hFE)))
+                     recv_byte_left <= recv_byte_left - 11'd1;
 
                      state <= STATE_AWAIT_GETNEXT;
-                  //end
+                  end
                end
             end
 
